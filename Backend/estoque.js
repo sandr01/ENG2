@@ -11,7 +11,7 @@ function buscar() { // mini infor para teste
 
     const tabelaResultado = document.getElementById('resultado');
     const tbody = tabelaResultado.getElementsByTagName('tbody')[0];
-    tbody.innerHTML = ''; // Limpar resultados anteriores depois 
+    tbody.innerHTML = ''; // Limpar resultados anteriores depois s
 
     exemploDados.forEach(dado => {
         const tr = document.createElement('tr');
