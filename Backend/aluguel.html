@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>protótipo de baixa fidelidade</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Protótipo de baixa fidelidade</h1>
+
+        <div id="formulario">
+            <h2>Adicionar Item ao Estoque</h2>
+            <label for="setor">Setor Solicitante:</label>
+            <input type="text" id="setor" required>
+
+            <label for="servidor">Servidor Solicitante:</label>
+            <input type="text" id="servidor" required>
+
+            <label for="matricula">Matrícula:</label>
+            <input type="text" id="matricula" required>
+
+            <label for="dataEmprestimo">Data de Empréstimo:</label>
+            <input type="date" id="dataEmprestimo" required>
+
+            <label for="dataDevolucao">Data de Devolução:</label>
+            <input type="date" id="dataDevolucao" required>
+
+            <label for="equipamento">Equipamento:</label>
+            <input type="text" id="equipamento" required>
+
+            <label for="descricaoEquipamento">Descrição do Equipamento:</label>
+            <input type="text" id="descricaoEquipamento" required>
+
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" id="quantidade" required>
+
+            <label for="observacao">Observação:</label>
+            <textarea id="observacao"></textarea>
+
+            <button onclick="adicionarItem()">Adicionar</button>
+        </div>
+
+        <table id="estoque">
+            <thead>
+                <tr>
+                    <th>Setor</th>
+                    <th>Servidor</th>
+                    <th>Matrícula</th>
+                    <th>Data de Empréstimo</th>
+                    <th>Data de Devolução</th>
+                    <th>Equipamento</th>
+                    <th>Descrição do Equipamento</th>
+                    <th>Quantidade</th>
+                    <th>Observação</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Itens do estoque serão adicionados dinamicamente com JavaScript -->
+            </tbody>
+        </table>   
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
