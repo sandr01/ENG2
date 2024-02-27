@@ -1,4 +1,4 @@
-function buscar() {
+function buscar() { // mini infor para teste
     const exemploDados = [
         { id: 1, dataSolicitada: '2024-02-26', status: 'concluido', setor: 'Armazém', tipo: 'Produto A', dataEntrega: '2024-03-05', prioridade: 'alta' },
         { id: 2, dataSolicitada: '2024-02-25', status: 'pendente', setor: 'Logística', tipo: 'Produto B', dataEntrega: '2024-03-10', prioridade: 'baixa' }
@@ -7,7 +7,7 @@ function buscar() {
 
     const tabelaResultado = document.getElementById('resultado');
     const tbody = tabelaResultado.getElementsByTagName('tbody')[0];
-    tbody.innerHTML = ''; // Limpar resultados anteriores
+    tbody.innerHTML = ''; // Limpar resultados anteriores depois 
 
     exemploDados.forEach(dado => {
         const tr = document.createElement('tr');
