@@ -1,6 +1,5 @@
 // aluguel.js
 
-// Função para adicionar um item à tabela
 function adicionarItem() {
     // Obter os valores do formulário
     var setor = document.getElementById("setor").value;
