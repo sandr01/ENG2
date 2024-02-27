@@ -37,3 +37,71 @@ nav ul li ul li {
 h1 {
     text-align: center;
 }
+
+/*topo*/
+
+
+header {
+    background-image: linear-gradient(#2a2b2c, #06161f);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #192129;
+    margin-top: auto;
+    flex-wrap: wrap;
+}
+
+header, footer {
+    color: white;
+    padding: 0.5em;
+}
+
+footer a {
+    color: inherit;
+}
+
+div#logo {
+    margin: auto 0;
+}
+
+div#logo * {
+    vertical-align: middle;
+    margin-left: 0.5em;
+}
+
+div#logo span {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+div#usuarioInfo a.botao {
+    border: 1px solid white;
+}
+
+div#usuarioInfo {
+    text-align: right;
+}
+
+div#usuarioInfo span, footer span {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+@media screen and (max-width: 450px) {
+
+    div#usuarioInfo {
+        margin-top: 1em;
+        text-align: left;
+    }
+
+    footer {
+        margin-top: 1em;
+        text-align: left;
+    }
+
+}
