@@ -105,3 +105,68 @@ div#usuarioInfo span, footer span {
     }
 
 }
+
+
+/* tabela
+
+/* Tabela */
+
+table {
+    width: 100%;
+    border-spacing: 0.1em;
+    margin: 0.5em auto;
+    /* Responsivo */
+    display: block;
+    overflow-x: auto;
+  }
+  
+  table th {
+    background-color: #525252;
+    color: white;
+  }
+  
+  table td,
+  table th {
+    padding: 0.5em;
+  }
+  
+  table tbody tr:nth-child(odd) {
+    background-color: #c6d4e2;
+  }
+  
+  table tbody tr:nth-child(even) {
+    background-color: #e7ecf1;
+  }
+  
+  table tbody tr:hover {
+    background-color: #cccccc;
+  }
+  
+  table tfoot td {
+    border-top: 1px solid #505050;
+    text-align: center;
+  }
+  
+  table tbody td:last-child,
+  table tbody td.fit {
+    text-align: center;
+    width: 1%;
+    white-space: nowrap;
+  }
+  
+  @media print {
+    table th {
+      color: black;
+    }
+  
+    table th,
+    table td {
+      border: 1px solid black;
+    }
+  
+    header,
+    nav,
+    div#comandos {
+      display: none;
+    }
+  }
