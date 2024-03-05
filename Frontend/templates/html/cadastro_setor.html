@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Setor</title>
+    <link rel="stylesheet" href="../css/cadastroS.css">
+    <link rel="stylesheet" href="../css/header.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="../img/logo.png" alt="logo">
+        </div>
+        <div id="logo2">
+            <img src="../img/logo2.png" alt="logo">
+        </div>
+    
+        <div id="title">
+            <h1 style="font-family: fantasy; font-size: 3em;">S.G.I.E</h1>
+        </div>
+    
+        <div>
+            <div id="usuarioInfo">
+                <p>Usuário: Administrador (Admin)</p>
+                <p>Papel: ADMIN</p>
+            </div>
+            <button style="margin: 10px 0% 10px 80%;">SAIR</button> 
+        </div>
+    
+    </header>
+
+    <nav>
+        <div class='navigation'>
+            <ul>
+                <li class="list active" style="--clr:#f44336">
+                    <a href="../html/home.html?menu=1"><span class="icon">HOME</span></a>
+                </li>
+                <div class="cad_menu">
+                    <a style="color: #555;" href="../html/cadastro_profissional.html?menu=2">CADASTRO DE FUNCIONARIO
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <a style="color: #555;" href="../html/cadastro_equipamento.html?menu=2">CADASTRO DE EQUIPAMENTO
+                        <i class="fas fa-info"></i>
+                    </a>
+                    <a style="color: #555;" href="../html/cadastro_setor.html?menu=2">CADASTRO DE SETOR
+                        <i class="fas fa-comment-dots"></i>
+                    </a>
+                    <a style="color: white; background-color: white;" href="#">"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+                        <i class="fas fa-bra"></i>
+                        </a>
+        
+                    <li class="list" style="--clr:#ffa117" id="cad">
+                        <a style="background-color: white; box-shadow: none;" href="#?menu=2"><span class="icon">CADASTRO</span></a>
+                    </li>
+                    </div>
+        
+                <li class="list" style="--clr:#0fc70f">
+                    <a href="../html/aluguel.html?menu=3"><span class="icon">ALUGUEL</span></a>
+                </li>
+        
+                <li class="list" style="--clr:#2196f3">
+                    <a href="../html/estoque.html?menu=4"><span class="icon">ESTOQUE</span></a>
+                </li>
+        
+                <li class="list" style="--clr:#b145e9">
+                    <a href="../html/relatorios.html?menu=5"><span class="icon">RELATORIO</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-icon">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <br>
+            <div class="list">
+                <ol>
+                    <li><a href="./aluguel.html" target="_parent">Aluguel</a></li>
+                    <li><a href="./estoque.html" target="_parent">Estoque</a></li>
+                    <li><a href="./relatorios.html" target="_parent">Relatorios</a></li></ul>
+                    <li><a href="./cadastro_profissional.html" target="_parent">Cadastro Profissional</a></li>
+                    <li><a href="./cadastro_equipamento.html" target="_parent">Cadastro Equipamento</a></li>
+                    <li><a href="./cadastro_setor.html" target="_parent">Cadastro Setor</a></li>
+                </ol>
+            </div>
+        </div>
+        <hr>
+    </nav>
+    <main>
+        <div id="conteudo">
+            <div id="busca">
+                <div class="form-container">
+                <h2>Cadastro Setor</h2><br>
+                <br>
+                <form id="cadastroSetorForm">
+                    <label for="nomeSetor">Nome do Setor:</label>
+                    <input type="text" id="nomeSetor" name="nomeSetor" required><br>
+                    <br>
+                    <label for="prioridade">Prioridade:</label>
+                    <input type="number" id="prioridade" name="prioridade" required min="1" max="5"><br>
+                    <br>
+                    <label for="responsavel">Responsável:</label>
+                    <input type="text" id="responsavel" name="responsavel" required><br>
+                    <br>
+                    <button id="botao" onclick="buscar()">Salvar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="scripts.js"></script>
+    <script src="../js/headre.js"></script>
+</body>
+</html>

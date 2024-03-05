@@ -1,0 +1,281 @@
+*{
+	margin: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+	margin: 0%;
+}
+
+/*************Cabeçalho*************/
+
+header {
+    background-color: #131313;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #ffffff;
+    align-items: center;
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+#logo2 {
+    display: none;
+    width: 150px;
+    height: auto;
+    margin: auto;
+    padding: 20px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+#title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#usuarioInfo {
+    display: block;
+    margin: 20px;
+}
+
+/***********Fim Cabeçalho***********/
+/***********************************/
+/***************Menu***************/
+nav {
+    background-color: white;
+    width: 100%;
+}
+
+.navigation {
+	position: relative;
+	width: 650px;
+	height: 60px;
+	padding: 0px 15px;
+	background: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+}
+
+.navigation ul {
+	width: auto;
+	display: flex;
+	background-color: #ffffff;
+}
+
+
+.navigation ul li {
+	list-style: none;
+	position: relative;
+	width: auto; 
+	height: 60px;
+	z-index: 2;
+	margin: 0px 10px;
+}
+
+.navigation ul li a {
+	text-decoration: none;
+	color:#555;
+	
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.navigation ul li a .icon {
+	position:relative;
+	background: #ffffff;
+	display:block;
+	width: auto;
+	padding: 0px 10px;
+	height: 55px;
+	text-align: center;
+	line-height: 65px;
+	border-radius: 20px;
+	color: #222327;
+	font-size: 1em;
+	transition: 0.5s;
+	transition-delay: 0s;
+}
+
+.navigation ul li.active a .icon {
+	background: var(--clr);
+	color: #fff;
+	transform: translatey(-27px);
+	transition-delay: 0.25s;
+}
+
+.navigation ul li a .icon:before {
+	content: '';
+	position: absolute;
+	top: 10px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: var(--clr);
+	border-radius: 30%;
+	filter: blur(5px);
+	opacity:0;
+	transition: .5s;
+	transition-delay: 0.15s;
+}
+
+.navigation ul li.active a .icon:before {
+	opacity: 0.5;
+	transition-delay: 0.25s;
+}
+
+.cad_menu {
+	width: auto;
+	height: auto;
+}
+
+#cad, .cad_menu a {
+	display: grid;
+	place-items: center;
+	transform: translateY(0);
+}
+
+.cad_menu a {
+	position: absolute;
+	width: 100%;
+	padding: 15px;
+	border-radius: 20px;
+	margin-bottom: 10px;
+}
+
+.cad_menu li a {
+	padding: 0px;
+	margin-bottom: 0px;
+}
+
+.cad_menu a {
+	background-color: #eeeeee;
+	height: 30px;
+	width: auto;
+	font-size: 22px;
+	color: #4249ed;
+	text-decoration: none;
+	transition: 0.5s;
+}
+
+/*************Fim Menu*************/
+/***********************************/
+/***********Menu Celular***********/
+
+.menu-icon {
+    display: none;
+    width: 100%;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu-icon ol {
+    display: none;
+    list-style-type: none;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 0%;
+}
+
+.menu-icon:hover ol {
+    display: block;
+}
+
+ol li {
+	display: none;
+    background-color: #ffffff;
+	padding: 10px;
+}
+
+ol li:hover {
+    background-color: #a1a1a1;
+}
+
+li a {
+	text-decoration: none;
+	color: #222327;
+
+}
+
+.menu-icon:hover ol li {
+    display: block;
+}
+
+
+.line {
+    width: 30px;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    margin-left: 45%;
+}
+
+.line:nth-child(1) {
+    top: 0;
+}
+
+.line:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.line:nth-child(3) {
+    bottom: 0;
+}
+/*********Fim Menu Celular*********/
+/***********************************/
+/**********Responsividade**********/
+
+@media screen and (max-width: 730px) {
+    header {
+        display: block;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    #logo2 {
+        display: block;
+    }
+
+    #usuarioInfo {
+        margin-top: 1em;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    nav {
+        margin: 0%;
+        padding: 15px 0px 15px 0px;
+    }
+
+    nav .menu-icon .list {
+        display: block;
+    }
+}
+
+/********Fim Responsividade********/

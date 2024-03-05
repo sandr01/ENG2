@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site de Cadastros</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css'><link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Cadastros</a>
-                <ul>
-                    <li><a href="/cadastro-profissional">Cadastro Profissional</a></li>
-                    <li><a href="/cadastro-equipamento">Cadastro Equipamento</a></li>
-                    <li><a href="/cadastro-setor">Cadastro Setor</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
+  <h1>Login</h1>
+  <form id="credenciais">
+    <div class="input">
+      <input class="input__field" type="text" required />
+      <label for="user" class="input__label">Usuário</label>
+    </div>
 
-    <h1>Bem-vindo ao Meu Site de Cadastros</h1>
+      <div class="input">
+        <input class="input__field" id="password" type="password" required />
+        <label for="password" class="input__label">Senha</label>
+        <span class="input__icon-wrapper">
+        <i class="input__icon ri-eye-off-line"></i>
+      </div>
 
-    <script src="scripts.js"></script>
+      <button type="submit">Entrar</button>
+  </form>
+  <script  src="./index.js"></script>
 </body>
 </html>
