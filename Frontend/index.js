@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
       inputIcon.classList.toggle("ri-eye-off-line", isPasswordVisible);
       inputIcon.classList.toggle("ri-eye-line", !isPasswordVisible);
   });
-
   form.addEventListener('submit', function(e) {
       e.preventDefault();
       const usuario = form.querySelector('input[type="text"]').value;

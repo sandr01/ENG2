@@ -23,9 +23,6 @@ main {
     background-color: white;
     min-width: 1030px;
 }
-
-
-
 #observacao, #quantidade {
     padding: 8px;
     border: 1px solid #ccc;
@@ -33,7 +30,6 @@ main {
     width: calc(30% - 12px);
     margin-right: 10px;
 }
-
 table {
     width: 90%;
     border-collapse: collapse;
