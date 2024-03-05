@@ -11,7 +11,7 @@ body {
 /*************Cabeçalho*************/
 
 header {
-    background-color: #131313;
+    background-color: #58583f;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
