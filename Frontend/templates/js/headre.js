@@ -18,6 +18,9 @@ function updateIndicator(index) {
   indicator.style.transform = `translatex(calc(70px * ${index}))`;
 }
 
+document.getElementById('logoutButton').addEventListener('click', function() {
+  window.location.href = '../../index.html';
+});
 
 let toggleBtn = document.getElementById("cad");
 let menuItems = document.querySelectorAll(".cad_menu a");
