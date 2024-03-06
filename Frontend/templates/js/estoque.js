@@ -3,11 +3,11 @@ function buscar() {
         { dataSolicitada: '2024-02-26', status: 'concluido', setor: 'Ti', tipo: 'Produto A', dataEntrega: '2024-03-05', prioridade: 'alta' },
         { dataSolicitada: '2024-02-25', status: 'pendente', setor: 'Ufac', tipo: 'Produto B', dataEntrega: '2024-03-10', prioridade: 'media' },
         { dataSolicitada: '2024-02-25', status: 'pendente', setor: 'Ifac', tipo: 'Produto C', dataEntrega: '2024-03-10', prioridade: 'alta' },
-        { dataSolicitada: '2024-02-25', status: 'em andamento', setor: 'Uninorte', tipo: 'Produto H', dataEntrega: '2024-03-10', prioridade: 'media' },
+        { dataSolicitada: '2024-02-25', status: 'andamento', setor: 'Uninorte', tipo: 'Produto H', dataEntrega: '2024-03-10', prioridade: 'media' },
         { dataSolicitada: '2024-02-25', status: 'pendente', setor: 'Unimeta', tipo: 'Produto Y', dataEntrega: '2024-05-10', prioridade: 'baixa' },
         { dataSolicitada: '2024-02-26', status: 'concluido', setor: 'Ti', tipo: 'Produto A', dataEntrega: '2024-03-05', prioridade: 'alta' },
         { dataSolicitada: '2024-02-25', status: 'pendente', setor: 'Ufac', tipo: 'Produto B', dataEntrega: '2024-03-10', prioridade: 'media' },
-        { dataSolicitada: '2024-02-25', status: 'em andamento', setor: 'Ifac', tipo: 'Produto C', dataEntrega: '2024-03-10', prioridade: 'alta' },
+        { dataSolicitada: '2024-02-25', status: 'andamento', setor: 'Ifac', tipo: 'Produto C', dataEntrega: '2024-03-10', prioridade: 'alta' },
         { dataSolicitada: '2024-02-25', status: 'pendente', setor: 'Uninorte', tipo: 'Produto H', dataEntrega: '2024-03-10', prioridade: 'media' },
         { dataSolicitada: '2024-02-25', status: 'andamento', setor: 'Unimeta', tipo: 'Produto Y', dataEntrega: '2024-05-10', prioridade: 'baixa' },
         { dataSolicitada: '2024-02-25', status: 'pendente', setor: 'naosei', tipo: 'Produto Z', dataEntrega: '2024-02-10', prioridade: 'baixa' }
