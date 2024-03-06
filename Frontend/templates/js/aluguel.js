@@ -23,8 +23,12 @@ function adicionarItem() {
     var cellAcoes = newRow.insertCell(8);
     var removeButton = document.createElement("button");
     removeButton.innerHTML = "Remover";
+    // Definindo a cor do botão para vermelho
+    removeButton.style.backgroundColor = "red";
+    removeButton.style.color = "white"; // Muda a cor do texto para branco para melhorar a visibilidade
     removeButton.onclick = function() {
-        table.deleteRow(newRow.rowIndex - 1);
+        // Esta linha foi ajustada para corrigir a remoção da linha
+        table.deleteRow(this.parentElement.parentElement.rowIndex - 1);
     };
     cellAcoes.appendChild(removeButton);
 
