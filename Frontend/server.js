@@ -7,7 +7,7 @@ const server = http.createServer((req, res) => {
 
     // Se o caminho leva a um diretório, adicione 'index.html' ao final
     if (fs.statSync(filePath).isDirectory()) {
-        filePath = path.join(filePath, './Frontend/index.html');
+        filePath = path.join(filePath, 'index.html');
     }
 
     // Obtenha a extensão do arquivo
