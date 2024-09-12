@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- Gardiny -->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estoque</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Estoque</h2>
+
+    <label for="buscaLivre">Busca Livre:</label>
+    <input type="text" id="buscaLivre" placeholder="Digite aqui">
+
+    <label for="dataSolicitada">Data Solicitada:</label>
+    <input type="date" id="dataSolicitada">
+
+    <label for="status">Status:</label>
+    <select id="status">
+        <option value="">Selecione</option>
+        <option value="pendente">Pendente</option>
+        <option value="emAndamento">Em Andamento</option>
+        <option value="concluido">Concluído</option>
+    </select>
+
+    <label for="setor">Setor:</label>
+    <input type="text" id="setor" placeholder="Digite aqui">
+
+    <label for="tipo">Tipo:</label>
+    <input type="text" id="tipo" placeholder="Digite aqui">
+
+    <label for="dataEntrega">Data de Entrega:</label>
+    <input type="date" id="dataEntrega">
+
+    <label for="prioridade">Prioridade:</label>
+    <select id="prioridade">
+        <option value="">Selecione</option>
+        <option value="baixa">Baixa</option>
+        <option value="media">Média</option>
+        <option value="alta">Alta</option>
+    </select>
+
+    <button onclick="buscar()">Buscar</button>
+
+    <table id="resultado">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Data Solicitada</th>
+                <th>Status</th>
+                <th>Setor</th>
+                <th>Tipo</th>
+                <th>Data de Entrega</th>
+                <th>Prioridade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- ainda sem resultado -->
+        </tbody>
+    </table>
+
+    <script src="estoque.js"></script>
+</body>
+</html>
