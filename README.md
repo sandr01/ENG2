@@ -14,7 +14,7 @@ Este projeto é uma aplicação web que visa gerenciar o controle de estoque de 
 
 ## Documento de Requisitos 
 Um sistema de reserva para uso dos equipamentos, de modo que  os  estes  equipamentos  sejam  bem  gerenciados  pelos  gestores
-- **[Documento de Requisitos](https://github.com/sandr01/ENG2/blob/main/Files/Docs/Documento%20de%20Requisitos_finalENG2.pdf)**
+- **[Documento de Requisitos](https://github.com/sandr01/ENG2/blob/main/Docs/Documento%20de%20Requisitos%20de%20Software.pdf)**
 
 ## Tecnologias Utilizadas
 - **Frontend:** **[HTML,CSS](https://https://pos-unipar.github.io/assets/files/aula-02-f7c6a1ceb251f2c96d891a3bb17790ee.pdf/)**
